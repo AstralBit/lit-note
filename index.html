@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f8f2" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title="片刻 · RSS" href="/rss.xml" />
+    <title>片刻 · 写下此刻，留给以后</title>
+    <meta name="description" content="一个关于技术、设计与日常生活的个人博客。用文字收藏值得回看的片刻。" />
+    <script>
+      try {
+        const saved = localStorage.getItem('moment-theme');
+        document.documentElement.dataset.theme = saved || 'light';
+      } catch {}
+    </script>
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <blog-app></blog-app>
+  </body>
+</html>
